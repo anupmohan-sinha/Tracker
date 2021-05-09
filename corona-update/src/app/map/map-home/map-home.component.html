@@ -1,0 +1,71 @@
+<div class="map-container">
+    <div class="map-image"><img src="../../assets/img/construction.jpg" alt="" width="300"></div>
+
+    <agm-map  [zoom] ="3" [latitude]="latitude" [longitude]="longitude" [styles]="darkTheme">
+    
+        <agm-circle [latitude]="latitude + 0.3" [longitude]="longitude" 
+            [radius]="1000000"
+            [fillColor]="'#f51b00'"
+            [circleDraggable]="false"
+            [editable]="false">
+        </agm-circle>
+        
+        <agm-circle [latitude]="latitude + 0.3" [longitude]="longitude" 
+            [radius]="500000"
+            [fillColor]="'#9B1C31'"
+            [circleDraggable]="false"
+            [editable]="false">
+        </agm-circle>
+        
+        <agm-circle [latitude]="32.4279 + 0.3" [longitude]="53.6880" 
+            [radius]="900000"
+            [fillColor]="'#f51b00'"
+            [circleDraggable]="false"
+            [editable]="false">
+        </agm-circle>
+        
+        <agm-circle [latitude]="32.4279 + 0.3" [longitude]="53.6880" 
+            [radius]="250000"
+            [fillColor]="'#9B1C31'"
+            [circleDraggable]="false"
+            [editable]="false">
+        </agm-circle>
+        <agm-circle [latitude]="40.7128 + 0.3" [longitude]="74.0060" 
+            [radius]="900000"
+            [fillColor]="'#f51b00'"
+            [circleDraggable]="false"
+            [editable]="false">
+        </agm-circle>
+        
+        <agm-circle [latitude]="40.7128 + 0.3" [longitude]="74.0060" 
+            [radius]="250000"
+            [fillColor]="'#9B1C31'"
+            [circleDraggable]="false"
+            [editable]="false">
+        </agm-circle>
+        
+        <agm-circle [latitude]="41.8719 + 0.3" [longitude]="12.5674" 
+            [radius]="500000"
+            [fillColor]="'#9B1C31'"
+            [circleDraggable]="false"
+            [editable]="false">
+        </agm-circle>
+        
+        <agm-circle [latitude]="19.7515 + 0.3" [longitude]="75.713" 
+            [radius]="250000"
+            [fillColor]="'#9B1C31'"
+            [circleDraggable]="false"
+            [editable]="false">
+        </agm-circle>
+        
+        <agm-circle [latitude]="19.7515 + 0.3" [longitude]="75.713" 
+            [radius]="500000"
+            [fillColor]="'#9B1C31'"
+            [circleDraggable]="false"
+            [editable]="false">
+        </agm-circle>
+        
+        </agm-map>
+</div>
+
+    

@@ -1,0 +1,31 @@
+<nav  class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+            <a routerLink="/" class="navbar-brand virus-icon"><img src="../../assets/icons/virus.png" alt="virus icon" height="45"></a>
+            <button type="button" class="navbar-toggler" (click)="collapsed = !collapsed">
+                <span class="navbar-toggler-icon"></span>
+            </button>            
+
+        <div class="collapse navbar-collapse" [class.collapse]="collapsed" (window:resize)="collapsed = true">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item"><a class="nav-link" [routerLink]="['/india']" routerLinkActive="router-link-active">India</a></li>
+                <li class="nav-item"><a class="nav-link" [routerLink]="['/world']">World</a></li>
+                <li class="nav-item"><a class="nav-link" [routerLink]="['/info']">Information</a></li>
+                <li class="nav-item"><a class="nav-link" [routerLink]="['/news']">Latest News</a></li>
+                <li class="nav-item"><a class="nav-link" [routerLink]="['/map']">Map</a></li>
+                <li class="nav-item"><a class="nav-link" [routerLink]="['/author']">Author</a></li>
+            </ul>
+
+<!--             <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown" appDropdown>
+                    <a href="#" class="nav-link dropdown-toggle" role="button">
+                        Manage <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">About Author</a></li>
+                        <li><a href="#">Fetch Data</a></li>
+                    </ul>
+                </li>
+            </ul> -->
+        </div>
+    </div>
+</nav>

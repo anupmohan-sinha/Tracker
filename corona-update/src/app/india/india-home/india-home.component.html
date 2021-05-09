@@ -1,0 +1,10 @@
+<div class="container">
+    <div class="row">
+        <div class="col-lg-12 col-sm-12 col-md-12">
+            <app-latest-stat [overallCases]="overallCases"></app-latest-stat>
+            <app-datewise-bar-stat [timeSeriesCases]="indiaStatData.cases_time_series"></app-datewise-bar-stat>
+            <app-line-chart [timeSeriesCases]="indiaStatData.cases_time_series"></app-line-chart>
+            <app-statewise-stat [stateData]="statewiseData" [districtData]="stateDistrictData"></app-statewise-stat>
+        </div>
+    </div>
+  </div>
