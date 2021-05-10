@@ -12,7 +12,7 @@ export class NewsService {
   private url = 'https://newsapi.org/v2/everything?' +
               'q=covid-19&' +
               'sortBy=published At&' +
-              'apiKey=b8fd63b4ff4a480cbf8420dfbe005882';
+              'apiKey=';
 
   getlatestNews(): Observable<News> {
     return this.http.get<News>(this.url);
