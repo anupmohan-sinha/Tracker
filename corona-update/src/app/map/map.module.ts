@@ -11,7 +11,7 @@ import { AgmCoreModule } from '@agm/core';
   imports: [
     CommonModule,
     AgmCoreModule.forRoot({
-      apiKey: 'AIzaSyCZ-afFOEg5f2BAFrSCGb02j1BiXkHM4Ig'
+      apiKey: ''
     }),
     RouterModule.forChild(routes)
   ],
